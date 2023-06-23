@@ -1,0 +1,47 @@
+Day-1-Task:
+ 
+1.Write a blog on Difference between HTTP1.1 vs HTTP2 ?
+
+  HTTP (Hypertext Transfer Protocol) is the foundation of communication on the World Wide Web.
+It allows for the transfer of information between a client and a server.Over the years, several
+versions of HTTP have been developed, with HTTP1.1 being the widely used standard for a long time.
+However, HTTP2 has emerged as a significant improvement over its predecessor. In this blog post,
+we will explore the key differences between HTTP1.1 and HTTP2 in brief.
+
+ => Performance:
+       One of the most significant advantages of HTTP2 over HTTP1.1 is its improved performance.
+HTTP2 uses a binary protocol as opposed to the text-based protocol of HTTP1.1. 
+This allows for more efficient parsing and reduces the overhead of processing requests and responses. 
+Additionally, HTTP2 introduces multiplexing, which enables multiple requests and responses to be sent
+concurrently over a single connections.
+
+ => Header Compression:
+       In HTTP1.1, each request and response includes headers that provide additional 
+information about the data being transmitted. However, these headers can be verbose and repetitive,
+leading to increased data transfer. HTTP2 addresses this issue by introducing header compression. 
+It uses a technique called HPACK, which reduces the size of headers by using a compressed representation.
+
+____________________________________________________________________________________________________________
+
+2.Write a blog about objects and its internal representation in Javascript?
+
+  In JavaScript, an object is a collection of key-value pairs, where the keys are strings and the values
+can be any data type, including other objects. Objects in JavaScript are dynamic, meaning their properties
+can be added, modified, or removed at runtime.
+
+eg:
+const person = {
+  name: "gowtham",
+  age: 20,
+  email: "gowtham@gmail.com"
+};
+
+console.log(person.name); // Output: gowtham
+
+eg: Internal Representation of Objects:
+person.age = 30;
+console.log(person.age); // Output: 30
+
+person["email"] = "van@gmail.com";
+console.log(person.email); // Output: "van@gmail.com";.com
+
